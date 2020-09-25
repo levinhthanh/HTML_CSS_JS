@@ -2,9 +2,10 @@ let images = ['banner1.jpg', 'banner2.jpg', 'banner3.jpg', 'banner4.jpg'];
 
 function change_banner(direct){
           current = document.getElementById('image_banner').src;
+          console.log(current);
           index = 1;
           for(i = 0; i < images.length; i++){
-               value = "http://127.0.0.1:5500/" + images[i];
+               value = "http://127.0.0.1:5500/ecommerce/" + images[i];
                if(current == value){
                    index = i;
                }
