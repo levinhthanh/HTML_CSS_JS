@@ -1,0 +1,3 @@
+- co email
+- co file
+- ko dc de trong

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A tribute page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_left">
+            <i class="far fa-address-card" id="header_icon"></i>
+            <a href="#" id="header_name">Deha</a>
+        </div>
+        <div class="header_right">
+            <a href="#" id="header_name">Help</a>
+            <i class="fas fa-angle-down" id="help_icon"></i>
+            <a href="#" id="header_name">Login</a>
+        </div>
+    </div>
+    <div class="body">
+         <p id="title_page">FOOTBALL PLAYER</p>
+
+         <div class="content">
+
+            <div class="blog1_info">
+                <div class="blog1_info_left">
+                    <img id="avatar" src="auba.jpg" alt="avatar">
+                </div>
+                <div class="blog1_info_right">
+                    <p class="title_info">FULLNAME</p>
+                    <p class="info">Pierre-Emerick Emiliano François Aubameyang</p>
+                    <p class="title_info">DATE OF BIRTH</p>
+                    <p class="info">18 June 1989</p>
+                    <p class="title_info">NATIONALITY</p>
+                    <p class="info">Gabon</p>
+                    <p class="title_info">CLUB</p>
+                    <p class="info">Arsenal</p>
+                </div>
+            </div> 
+
+            <div class="blog2_info">
+                <div class="blog2_info_left">
+                      <ul id="selections">
+                          <li onclick="get_content(1)"><button id="select_life">Personal life</button></li>
+                          <li onclick="get_content(2)"><button id="select_internation">International career</button></li>
+                          <li onclick="get_content(3)"><button id="select_club">Club career</button></li>
+                          <li onclick="get_content(4)"><button id="select_honour">Honours</button></li>
+                      </ul>
+
+                      <div id="selections_hidden">
+                          <button class="button_select" id="select_life_hidden" onclick="get_content(1)">Personal life</button>
+                          <button class="button_select" id="select_internation_hidden" onclick="get_content(2)">International career</button>
+                          <button class="button_select" id="select_club_hidden" onclick="get_content(3)">Club career</button>
+                          <button class="button_select" id="select_honour_hidden" onclick="get_content(4)">Honours</button>
+                      </div>
+
+                      <div id="selection_content">
+                        
+                     </div>
+
+                     <table id="table_statistical_hidden"> 
+                        <tr>
+                            <th>ID</th>
+                            <th>Club</th>
+                            <th>Seasons</th>
+                            <th>Appearances</th>
+                            <th>Goals</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>AC Milan</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>                   
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dijon</td>
+                            <td>1</td>
+                            <td>39</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                           <td>3</td>
+                           <td>Lille</td>
+                           <td>1</td>
+                           <td>24</td>
+                           <td>2</td>
+                       </tr>
+                       <tr>
+                           <td>4</td>
+                           <td>Monaco</td>
+                           <td>1</td>
+                           <td>23</td>
+                           <td>2</td>
+                       </tr>
+                       <tr>
+                           <td>5</td>
+                           <td>Saint-Étienne</td>
+                           <td>3</td>
+                           <td>97</td>
+                           <td>41</td>
+                       </tr>
+                       <tr>
+                           <td>6</td>
+                           <td>Borussia Dortmund</td>
+                           <td>5</td>
+                           <td>213</td>
+                           <td>141</td>
+                       </tr>
+                       <tr>
+                           <td>7</td>
+                           <td>Arsenal</td>
+                           <td>4 +</td>
+                           <td>112 +</td>
+                           <td>72 +</td>
+                       </tr>
+                    </table>
+                </div>
+                <div class="blog2_info_right">
+                     <table id="table_statistical"> 
+                         <tr>
+                             <th>ID</th>
+                             <th>Club</th>
+                             <th>Seasons</th>
+                             <th>Appearances</th>
+                             <th>Goals</th>
+                         </tr>
+                         <tr>
+                             <td>1</td>
+                             <td>AC Milan</td>
+                             <td>1</td>
+                             <td>0</td>
+                             <td>0</td>                   
+                         </tr>
+                         <tr>
+                             <td>2</td>
+                             <td>Dijon</td>
+                             <td>1</td>
+                             <td>39</td>
+                             <td>10</td>
+                         </tr>
+                         <tr>
+                            <td>3</td>
+                            <td>Lille</td>
+                            <td>1</td>
+                            <td>24</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Monaco</td>
+                            <td>1</td>
+                            <td>23</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Saint-Étienne</td>
+                            <td>3</td>
+                            <td>97</td>
+                            <td>41</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Borussia Dortmund</td>
+                            <td>5</td>
+                            <td>213</td>
+                            <td>141</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Arsenal</td>
+                            <td>4 +</td>
+                            <td>112 +</td>
+                            <td>72 +</td>
+                        </tr>
+                     </table>
+                </div>
+            </div>
+           
+         </div>
+    </div>
+    <div class="footer">
+        <p class="intro">Made by Thanh Le 09-2020</p>
+    </div>
+
+    <script src="control.js"></script>
+</body>
+</html>

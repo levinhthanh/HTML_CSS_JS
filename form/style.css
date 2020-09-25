@@ -1,0 +1,24 @@
+.page{
+    width: 100vw;
+    margin: auto;
+    background-color: whitesmoke;
+    padding-top: 10px;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.header{
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+.error {
+    color: red;
+ }
+

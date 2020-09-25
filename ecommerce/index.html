@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang thương mại điện tử</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+                <img id="logo" src="Logo-X-men-2016-W.png" alt="">
+            </div> 
+            <div class="search">
+                <form action="#">
+                    <div id="form_search">
+                        <input id="search" type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                        <input id="submit" type="submit" value="Tìm kiếm">
+                    </div>
+                </form> 
+            </div> 
+            <div class="connect">
+                <div id="message">
+                    <a href=""><i id="letter_icon" class="fas fa-envelope-square"></i></a>
+                    <a id="letter_link" href="">Liên hệ</a> 
+                </div>
+                <div id="cart">
+                    <a href=""><i id="cart_icon" class="fas fa-cart-arrow-down"></i></a>
+                    <a id="cart_link" href="">Giỏ hàng</a>  
+                </div>
+                <div id="account">
+                    <a href=""><i id="user_icon" class="fas fa-user-circle"></i></a>
+                    <a id="user_link" href="">Cá nhân</a>
+                </div>
+            </div> 
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href=""><i class="fas fa-home icon_navbar"></i></a> Trang chủ</li>
+                <li>Sản phẩm</li>
+                <li>Khuyến mãi HOT</li>
+                <li>Thương hiệu</li>
+                <li>Tin tức</li>
+                <li>Giới thiệu</li>
+                <li>Sự kiện</li>
+            </ul>
+        </div>
+
+        <div class="banner_middle">
+            <img id="banner_middle" src="banners/banner.jpg" alt="">
+        </div>
+
+        <div class="body">
+            <div class="body_left">
+                 <div class="content_left">
+                     <p id="list_category">DANH MỤC SẢN PHẨM</p>
+                     <p class="filters">Tất cả sản phẩm</p>
+                     <p class="filters">Điện thoại</p>
+                     <p class="filters">Máy tính bảng</p>
+                     <p class="filters">Phụ kiện công nghệ</p>
+                     <p class="filters">Dược phẩm</p>
+                     <p class="filters">Thời trang</p>
+                     <p class="filters">Thể thao</p>
+                     <p class="filters">Sản phẩm khuyến mãi</p>
+                     <img id="banner_product1" src="MOBILE-BANNER-doc.png" alt="">
+                 </div>
+            </div>
+            <div class="body_right">
+                 <div class="slidebar">
+                     <img id="image_banner" src="banner1.jpg" alt="">
+                     <i onclick="change_banner('previous')" id="button_previous" class="fas fa-angle-double-left"></i>
+                     <i onclick="change_banner('next')" id="button_next" class="fas fa-angle-double-right"></i>
+                 </div>
+
+                 <div class="show_products">
+                     <h4 class="title_content">SẢN PHẨM ĐƯỢC TÀI TRỢ</h4>
+                    <div class="grid-container" id="product_list">
+                       <!-- products -->
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="banner_middle">
+            <img id="banner_middle" src="banners/sando-banner.png" alt="">
+        </div>
+
+        <div class="footer">
+            <div class="footer_left">
+                <img id="logo" src="Logo-X-men-2016-W.png" alt="">
+                <div class="associal_network">
+                    <i class="fab fa-facebook" class="associal_network"></i>
+                    <i class="fab fa-instagram" class="associal_network"></i>
+                    <i class="fab fa-twitter" class="associal_network"></i>
+                </div>
+            </div>
+            <div class="footer_center">
+                <p id="footer_title">Thông tin </p>
+                <a href="#" class="footer_content">Chính sách công ty</a>
+                <a href="#" class="footer_content">Sự kiện</a>
+                <a href="#" class="footer_content">Bài viết tham khảo</a>
+                <a href="#" class="footer_content">Hỗ trợ kỹ thuật</a>
+                <a href="#" class="footer_content">Các dịch vụ khác</a>
+            </div>
+            <div class="footer_right">
+                <p id="footer_title">Liên hệ</p>
+                <p class="footer_content">F28, Pearl Plaza, 561A Điện Biên Phủ, P.25, Q. Bình Thạnh, Tp. HCM</p>
+                <p class="footer_content">+84 28 3842 2825</p>
+            </div>
+        </div>
+    </div>
+
+
+<script src="controll.js"></script>
+<script src="products.js"></script>
+</body>
+</html>
