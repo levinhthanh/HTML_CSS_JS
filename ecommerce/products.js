@@ -44,4 +44,6 @@ window.onload = function load_products(){
         `;
     }
     document.getElementById('product_list').innerHTML = data_products;
+
+    load_products_2();
 }

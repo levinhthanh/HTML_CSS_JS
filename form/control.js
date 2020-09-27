@@ -1,10 +1,10 @@
 function uploadAvatar(element) {
     var img = element.files[0];
     var reader = new FileReader();
-        reader.onloadend = function () {
-            $("#avatar").attr("src", reader.result);
-        }
     reader.readAsDataURL(img);
+    reader.onloadend = function () {
+            $("#avatar").attr("src", reader.result);
+        } 
 }
 
 $().ready(function(){

@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang thương mại điện tử</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
 </head>
+
 <body>
     <div class="container">
 
         <div class="header">
             <div class="logo">
-                <img id="logo" src="Logo-X-men-2016-W.png" alt="">
-            </div> 
+                <a href=""><img id="logo" src="Logo-X-men-2016-W.png" alt=""></a>
+            </div>
             <div class="search">
                 <form action="#">
                     <div id="form_search">
                         <input id="search" type="text" placeholder="Nhập từ khóa tìm kiếm...">
                         <input id="submit" type="submit" value="Tìm kiếm">
                     </div>
-                </form> 
-            </div> 
+                </form>
+            </div>
             <div class="connect">
                 <div id="message">
                     <a href=""><i id="letter_icon" class="fas fa-envelope-square"></i></a>
-                    <a id="letter_link" href="">Liên hệ</a> 
+                    <a id="letter_link" href="">Liên hệ</a>
                 </div>
                 <div id="cart">
                     <a href=""><i id="cart_icon" class="fas fa-cart-arrow-down"></i></a>
-                    <a id="cart_link" href="">Giỏ hàng</a>  
+                    <a id="cart_link" href="">Giỏ hàng</a>
                 </div>
                 <div id="account">
                     <a href=""><i id="user_icon" class="fas fa-user-circle"></i></a>
                     <a id="user_link" href="">Cá nhân</a>
                 </div>
-            </div> 
+            </div>
         </div>
 
         <div class="navbar">
@@ -57,37 +60,52 @@
 
         <div class="body">
             <div class="body_left">
-                 <div class="content_left">
-                     <p id="list_category">DANH MỤC SẢN PHẨM</p>
-                     <p class="filters">Tất cả sản phẩm</p>
-                     <p class="filters">Điện thoại</p>
-                     <p class="filters">Máy tính bảng</p>
-                     <p class="filters">Phụ kiện công nghệ</p>
-                     <p class="filters">Dược phẩm</p>
-                     <p class="filters">Thời trang</p>
-                     <p class="filters">Thể thao</p>
-                     <p class="filters">Sản phẩm khuyến mãi</p>
-                     <img id="banner_product1" src="MOBILE-BANNER-doc.png" alt="">
-                 </div>
+                <div class="content_left">
+                    <p id="list_category">DANH MỤC SẢN PHẨM</p>
+                    <p class="filters">Tất cả sản phẩm</p>
+                    <p class="filters">Điện thoại</p>
+                    <p class="filters">Máy tính bảng</p>
+                    <p class="filters">Phụ kiện công nghệ</p>
+                    <p class="filters">Dược phẩm</p>
+                    <p class="filters">Thời trang</p>
+                    <p class="filters">Thể thao</p>
+                    <p class="filters">Sản phẩm khuyến mãi</p>
+                    <img id="banner_product1" src="MOBILE-BANNER-doc.png" alt="">
+                </div>
             </div>
             <div class="body_right">
-                 <div class="slidebar">
-                     <img id="image_banner" src="banner1.jpg" alt="">
-                     <i onclick="change_banner('previous')" id="button_previous" class="fas fa-angle-double-left"></i>
-                     <i onclick="change_banner('next')" id="button_next" class="fas fa-angle-double-right"></i>
-                 </div>
+                <div class="slidebar">
+                    <img id="image_banner" src="banner1.jpg" alt="">
+                    <i onclick="change_banner('previous')" id="button_previous" class="fas fa-angle-double-left"></i>
+                    <i onclick="change_banner('next')" id="button_next" class="fas fa-angle-double-right"></i>
+                </div>
 
-                 <div class="show_products">
-                     <h4 class="title_content">SẢN PHẨM ĐƯỢC TÀI TRỢ</h4>
+                <div class="show_products">
+                    <h4 class="title_content">SẢN PHẨM ĐƯỢC TÀI TRỢ</h4>
                     <div class="grid-container" id="product_list">
-                       <!-- products -->
+                        <!-- products -->
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
 
         <div class="banner_middle">
             <img id="banner_middle" src="banners/sando-banner.png" alt="">
+        </div>
+
+        <div class="products_silde">
+            <div class="products_silde_title">
+                <h4 class="title_content">SẢN PHẨM ĐƯỢC TÀI TRỢ</h4>
+            </div>
+            <div class="products_2">
+                <div class="grid-container_2" id="product_list_2">
+                    
+
+                </div>
+
+            </div>
+            <button onclick="change_jump()" id="btn_left"><i class="fas fa-angle-left"></i></button>
+            <button onclick="change_jump()" id="btn_right"><i class="fas fa-angle-right"></i></button>
         </div>
 
         <div class="footer">
@@ -116,7 +134,13 @@
     </div>
 
 
-<script src="controll.js"></script>
+
+ <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+
+ <script src="controll.js"></script>
 <script src="products.js"></script>
 </body>
+
 </html>

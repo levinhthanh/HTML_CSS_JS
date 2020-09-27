@@ -1,0 +1,90 @@
+{
+    
+    "products": 
+    [
+        {
+          "id": 1,
+          "name": "Áo phông Nam thời trang",
+          "price": "200.000đ",
+          "image": "products/aobun.png"
+        },
+        {
+          "id": 2,
+          "name": "Camera quay phim siêu nét",
+          "price": "2.000.000đ",
+          "image": "products/camera.png"
+        },
+        {
+          "id": 3,
+          "name": "Đồng hồ đeo tay chất nhất quả đất",
+          "price": "800.000đ",
+          "image": "products/dongho.png"
+        },
+        {
+          "id": 4,
+          "name": "Giày nam thời trang thế kỷ thứ X",
+          "price": "500.000đ",
+          "image": "products/giaynam.png"
+        },
+        {
+          "id": 5,
+          "name": "Iphone 7 plus 32GB màu bạc",
+          "price": "10.000.000đ",
+          "image": "products/iphone.png"
+        },
+        {
+          "id": 6,
+          "name": "Laptop samsung core i3 256GB",
+          "price": "12.000.000đ",
+          "image": "products/laptop.png"
+        },
+        {
+          "id": 7,
+          "name": "Tivi LG màn hình cong gần bễ  24inch",
+          "price": "5.000.000đ",
+          "image": "products/tivi.png"
+        },
+        {
+          "id": 8,
+          "name": "Túi xách đựng vé số",
+          "price": "200.000đ",
+          "image": "products/tuixach.png"
+        },
+        {
+          "id": 9,
+          "name" : "Nước hoa X-Men Phiên Bản Đặc Biệt 50ml",
+          "price" : "259.000 ₫",
+          "image" :  "products/xmen-fire-50ml-nen-dep-xinh.jpg"
+       },
+       {
+          "id": 10,
+          "name" : "Trọn bộ 5 món X-men phiên bản đặc biệt",
+          "price" : "469.000 ₫",
+          "image" :  "products/5_chai_xmen_mobile-e1592812659551.png"
+       },
+       {
+          "id": 11,
+          "name" : "Xịt X-Men Phiên Bản Đặc Biệt 100ml",
+          "price" : "99.000 ₫",
+          "image" :  "products/eOEBtL_simg_de2fe0_500x500_maxb.png"
+       },
+       {
+          "id": 12,
+          "name" : "Dầu gội X-Men For Boss Intense - Hương trầm mạnh mẽ 650g",
+          "price" : "155.000 ₫",
+          "image" :  "products/df176fb191ee6459190e3a59ac53d1b6.jpeg"
+       },
+       {  "id": 13,
+          "name" : "Sáp Vuốt Tóc Kiểu Tự Nhiên X-Men Freestyle (70g)",
+          "price" : "72.000 ₫",
+          "image" :  "products/adcb7eadc1c39b10be7c75063a22f1f2.jpg"
+       },
+       { 
+          "id": 14,
+          "name" : "Sữa tắm X-Men Phiên Bản Đặc Biệt 650g",
+          "price" : "174.988 ₫",
+          "image" :  "products/sua-tam-xmen-650g-dep-xinh.jpg"
+       }     
+]
+
+}

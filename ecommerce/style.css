@@ -22,7 +22,7 @@ a{
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    background-color: aliceblue;
+    background-color: #E6E0F8;
 }
 /*----------------------------------------------- HEADER */
 .header{
@@ -205,6 +205,10 @@ a{
     text-align: left;
   }
 
+  .grid-item:hover {
+    transform: scale(1.2);
+  }
+
 .product_image{
     width: 100%;
 }
@@ -226,6 +230,72 @@ a{
     width: 100%;
 }
 
+.products_silde{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    position: relative;
+}
+
+#btn_left{
+    position: absolute;
+    padding: 6px 3px;
+    top: 50%;
+    left: 0;
+} 
+
+#btn_right{
+    position: absolute;
+    padding: 6px 3px;
+    top: 50%;
+    right: 0;
+} 
+
+.products_silde_title{
+    padding: 0 0 10px 20px;
+    border: solid 1px darkgrey;
+}
+
+.products_2{
+    border: solid 1px darkgrey;
+    border-top: none;
+    overflow: hidden;
+}
+
+.grid-container_2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 2px;
+    background-color: #E6E0F8;
+  }
+  .grid-item_2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5px 2px;
+    text-align: left;
+  }
+
+  .grid-item_2:hover {
+    transform: scale(1.2);
+  }
+
+.image_product{
+    width: 100%;
+    border: solid 0.5px darkgrey;
+  }
+.name_product{
+    width: 100%;
+    font-weight: bold;
+    padding: 10px 0 0 12px;
+    overflow: hidden;
+  }
+.price_product{
+    width: 100%;
+    color: red;
+    font-weight: bold;
+    padding: 12px;
+}
 /* FOOTER */
 .footer{
     width: 100%;
